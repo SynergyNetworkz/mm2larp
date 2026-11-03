@@ -12353,7 +12353,7 @@ task.spawn(function()
         end
         ui:Register(panel, {Base = Vector2.new(360, 535), DragHandle = dragHandle, Layout = function(compact)
             local barHeight = compact and 44 or 38
-            topbar.AnchorPoint, topbar.Position, topbar.Size = Vector2.zero, UDim2.new(), UDim2.new(1, 0, 0, barHeight)
+            topbar.AnchorPoint, topbar.Position, topiarize = Vector2.zero, UDim2.new(), UDim2.new(1, 0, 0, barHeight)
             ribbon.AnchorPoint, ribbon.Position, ribbon.Size = Vector2.zero, UDim2.fromOffset(0, barHeight), UDim2.new(1, 0, 0, compact and 46 or 38)
             panelContainer.AnchorPoint, panelContainer.Position = Vector2.zero, UDim2.fromOffset(0, barHeight + (compact and 46 or 38))
             panelContainer.Size = UDim2.new(1, 0, 1, -(barHeight + (compact and 46 or 38) + 30))
